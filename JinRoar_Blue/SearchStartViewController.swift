@@ -63,7 +63,7 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         //TODO 遷移
         print("****** MCSESSION_STATE:\(state.rawValue) ******")
         //Connented(完了)時
-        if(state.rawValue == 3){
+        if(state.rawValue == 2){
             self.performSegue(withIdentifier: "goToWatchGame", sender: self)
         }
     }
