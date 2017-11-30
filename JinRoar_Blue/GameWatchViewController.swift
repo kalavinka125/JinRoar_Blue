@@ -9,17 +9,21 @@
 import UIKit
 import MultipeerConnectivity
 
-class GameWatchViewController: UIViewController , MCSessionDelegate{
+class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var phaseLabel: UILabel!
-    var appdelegate = UIApplication.shared.delegate as! AppDelegate
-    
     @IBOutlet weak var roleTableView: UITableView!
+    
+    var appdelegate = UIApplication.shared.delegate as! AppDelegate
+    private let CELL_ID = "roleCell"
+    
+    var playerList:[Player] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
-        
+        self.roleTableView.delegate = self
+        self.roleTableView.dataSource = self
         //デリゲートの移譲
         appdelegate.session!.delegate = self
     }
@@ -40,12 +44,31 @@ class GameWatchViewController: UIViewController , MCSessionDelegate{
     }
     */
     
+    
+    //セルの内容を変えろ indexPathの番号 = 配列インデックス
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.CELL_ID, for: indexPath) as! RoleTableViewCell
+        
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
         
     }
     
+    //受信タイミング
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
-        
+        DispatchQueue.main.async() {
+            let msg = NSString(data: data, encoding:String.Encoding.utf8.rawValue)
+            print("***** GET DATA : \(msg) *****")
+            self.roleTableView.reloadData()
+        }
     }
     
     func session(_ session: MCSession, didReceive stream: InputStream, withName streamName: String, fromPeer peerID: MCPeerID) {

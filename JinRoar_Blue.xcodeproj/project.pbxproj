@@ -24,6 +24,7 @@
 		7E7F19131FCFD15900FA7667 /* GameWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F19121FCFD15900FA7667 /* GameWatchViewController.swift */; };
 		7E7F19151FCFD96A00FA7667 /* warewolf-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7F19141FCFD96A00FA7667 /* warewolf-logo.png */; };
 		7E7F19171FCFE54700FA7667 /* RoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F19161FCFE54700FA7667 /* RoleTableViewCell.swift */; };
+		7E7F19191FCFF45800FA7667 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F19181FCFF45800FA7667 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		7E7F19121FCFD15900FA7667 /* GameWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWatchViewController.swift; sourceTree = "<group>"; };
 		7E7F19141FCFD96A00FA7667 /* warewolf-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warewolf-logo.png"; sourceTree = "<group>"; };
 		7E7F19161FCFE54700FA7667 /* RoleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleTableViewCell.swift; sourceTree = "<group>"; };
+		7E7F19181FCFF45800FA7667 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				7E31ECD81FCEE39E00D5A916 /* LaunchScreen.storyboard */,
 				7E31ECDB1FCEE39E00D5A916 /* Info.plist */,
 				7E31ED071FCEEF5000D5A916 /* SearchStartViewController.swift */,
+				7E7F19181FCFF45800FA7667 /* Player.swift */,
 			);
 			path = JinRoar_Blue;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				7E31ED081FCEEF5000D5A916 /* SearchStartViewController.swift in Sources */,
 				7E31ECD21FCEE39E00D5A916 /* ViewController.swift in Sources */,
 				7E7F19171FCFE54700FA7667 /* RoleTableViewCell.swift in Sources */,
+				7E7F19191FCFF45800FA7667 /* Player.swift in Sources */,
 				7E31ECD01FCEE39E00D5A916 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.JinRoar-Blue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -508,7 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "self.edu.JinRoar-Blue";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
