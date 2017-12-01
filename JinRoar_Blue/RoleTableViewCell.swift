@@ -18,6 +18,9 @@ class RoleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        playerNameLabel.adjustsFontSizeToFitWidth = true
+        abilityTargetLabel.adjustsFontSizeToFitWidth = true
+        warewolfKillVoteLabel.adjustsFontSizeToFitWidth = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
