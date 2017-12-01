@@ -63,8 +63,11 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         //TODO 遷移
         print("****** MCSESSION_STATE:\(state.rawValue) ******")
         //Connented(完了)時
-        if(state.rawValue == 2){
-            self.performSegue(withIdentifier: "goToWatchGame", sender: self)
+        if(state == .connected){
+            
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "goToWatchGame", sender: self)
+            }
         }
     }
     
