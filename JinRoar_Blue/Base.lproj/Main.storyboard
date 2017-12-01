@@ -106,6 +106,21 @@
             </objects>
             <point key="canvasLocation" x="727.5" y="14.788732394366198"/>
         </scene>
+        <!--Credit View Controller-->
+        <scene sceneID="Rze-Wp-vr3">
+            <objects>
+                <viewController id="Jnj-nj-MDa" customClass="CreditViewController" customModule="JinRoar_Blue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJV-oz-3Mk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ca5-F6-Kfq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yq0-g6-uWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="704"/>
+        </scene>
         <!--Game Watch View Controller-->
         <scene sceneID="8f2-hC-a82">
             <objects>
