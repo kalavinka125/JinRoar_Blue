@@ -1,0 +1,41 @@
+{
+    "day": 0,
+    "time": "Night",
+    "phase":"Action",
+    "updated" : "2017/04/01 09:30:00",
+
+    "players": [
+        {
+            "id":0,
+            "name": "るーじ",
+            "isAlive":1,
+            "roleID": 1,
+            "targetID":-1,
+            "killVote":-1
+        },
+        {
+            "id":1,
+            "name":"うざきち",
+            "isAlive":1,
+            "roleID":2,
+            "targetID":0,
+            "killVote":-1
+        },
+        {
+          "id":2,
+          "name":"せおっしー",
+          "isAlive":1,
+          "roleID":0,
+          "targetID":-1,
+          "killVote":-1
+        },
+        {
+          "id":3,
+          "name":"あきやま",
+          "isAlive":1,
+          "roleID":0,
+          "targetID":-1,
+          "killVote":-1
+        }
+    ]
+}
