@@ -9,7 +9,7 @@
 import UIKit
 import MultipeerConnectivity
 
-class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate,MCSessionDelegate{
+class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate,MCSessionDelegate,UITableViewDelegate,UITableViewDataSource{
     
     //Appdelegateクラス参照
     var appdelegate = UIApplication.shared.delegate as! AppDelegate
@@ -20,6 +20,13 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
     
     var peerID : MCPeerID = MCPeerID(displayName: UIDevice.current.name)
     
+    //説明 テーブル
+    @IBOutlet weak var descriptionTableView: UITableView!
+    private let CELL_ID = "DESCRIPTION_CELL"
+    private let descriptionText = ["まず、「Are you a Werewolf?」を別デバイスで起動するがいい。","「Are you a Werewolf?」タイトル画面から「Connect \"HERMIT\"」を押し給え。","このアプリに接続要請が来るゆえ、許可せよ。","時が経てば次の画面に移るだろう。"]
+    
+    
+    @IBOutlet weak var manualTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,6 +40,10 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         
         assistant = MCAdvertiserAssistant(serviceType: serviceType, discoveryInfo: nil, session: appdelegate.session!)
         assistant.start()
+        
+        self.descriptionTableView.delegate = self
+        self.descriptionTableView.dataSource = self
+        self.descriptionTableView.reloadData()
         
     }
 
@@ -86,5 +97,20 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
     func session(_ session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, at localURL: URL?, withError error: Error?) {
         
     }
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.descriptionText.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.CELL_ID,for:indexPath) as! DescriptionTableViewCell
+        cell.numberLabel.text = String("\(indexPath.row + 1).")
+        cell.descriptionTextView.text = descriptionText[indexPath.row]
+        return cell
+    }
+    
 
 }
