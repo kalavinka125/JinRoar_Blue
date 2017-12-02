@@ -123,7 +123,7 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
                 let decodeData = try decoder.decode(Forecast.self, from:data)
                 //日付
                 self.day = decodeData.day
-                self.dayLabel.text = "\(self.day) day"
+                self.dayLabel.text = "\(self.day) 日"
                 // NIGHT or DAY
                 self.time = decodeData.time
                 self.timeLabel.text = "\(self.time)"
