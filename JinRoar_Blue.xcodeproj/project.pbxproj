@@ -32,6 +32,7 @@
 		7EF1E6911FD2B0CD00493FE2 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6901FD2B0CD00493FE2 /* DescriptionTableViewCell.swift */; };
 		7EF1E6931FD2E47800493FE2 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6921FD2E47800493FE2 /* OtherViewController.swift */; };
 		7EF1E6951FD2E88200493FE2 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6941FD2E88200493FE2 /* OtherTableViewCell.swift */; };
+		7EF1E6971FD2EEFF00493FE2 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6961FD2EEFF00493FE2 /* AboutAppViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		7EF1E6901FD2B0CD00493FE2 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		7EF1E6921FD2E47800493FE2 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		7EF1E6941FD2E88200493FE2 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
+		7EF1E6961FD2EEFF00493FE2 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				7E37A26E1FD0F5F600C40589 /* Forecast.swift */,
 				7E37A2721FD12E1400C40589 /* CreditViewController.swift */,
 				7EF1E6921FD2E47800493FE2 /* OtherViewController.swift */,
+				7EF1E6961FD2EEFF00493FE2 /* AboutAppViewController.swift */,
 			);
 			path = JinRoar_Blue;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EF1E6971FD2EEFF00493FE2 /* AboutAppViewController.swift in Sources */,
 				7EF1E6911FD2B0CD00493FE2 /* DescriptionTableViewCell.swift in Sources */,
 				7EF1E6931FD2E47800493FE2 /* OtherViewController.swift in Sources */,
 				7EF1E6951FD2E88200493FE2 /* OtherTableViewCell.swift in Sources */,
