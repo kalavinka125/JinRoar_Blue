@@ -12,7 +12,6 @@ import MultipeerConnectivity
 class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewDelegate,UITableViewDataSource{
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var phaseLabel: UILabel!
     @IBOutlet weak var roleTableView: UITableView!
     
     var appdelegate = UIApplication.shared.delegate as! AppDelegate
@@ -34,8 +33,7 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
         appdelegate.session!.delegate = self
         
         //画面部品イニシャライズ
-        self.dayLabel.text = "\(day) day"
-        self.phaseLabel.text = ""
+        self.dayLabel.text = "\(day) 日"
     }
 
     override func didReceiveMemoryWarning() {
@@ -126,9 +124,6 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
                 //日付
                 self.day = decodeData.day
                 self.dayLabel.text = "\(self.day) day"
-                //VOTE or ACTION
-                self.phase = decodeData.phase
-                self.phaseLabel.text = "\(self.phase)"
                 // NIGHT or DAY
                 self.time = decodeData.time
                 self.timeLabel.text = "\(self.time)"
