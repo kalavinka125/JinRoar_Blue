@@ -19,10 +19,8 @@ struct Player : Codable{
 struct Forecast: Codable {
     //Day
     let day:Int
-    //夜か昼か
+    //夜か昼か夕方か
     let time:String
-    //フェーズ(投票、技能
-    let phase:String
     //送ってきた時間
     let updated: Date
     //プレイヤー
