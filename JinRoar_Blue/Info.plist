@@ -5,6 +5,9 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>PixelMplus10-Regular</string>
+		<string>PixelMplus10-Bold</string>
+		<string>PixelMplus12-Regular</string>
+		<string>PixelMplus12-Bold</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>ja_JP</string>
