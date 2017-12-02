@@ -10,6 +10,7 @@ import UIKit
 
 class CreditViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +32,7 @@ class CreditViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func backButtonTapped(_ sender: Any) {
+    }
+    
 }
