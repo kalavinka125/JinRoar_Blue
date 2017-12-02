@@ -20,6 +20,7 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
     
     var peerID : MCPeerID = MCPeerID(displayName: UIDevice.current.name)
     
+    @IBOutlet weak var introTextView: UITextView!
     //説明 テーブル
     @IBOutlet weak var descriptionTableView: UITableView!
     private let CELL_ID = "DESCRIPTION_CELL"
@@ -45,6 +46,8 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         self.descriptionTableView.dataSource = self
         self.descriptionTableView.reloadData()
         
+        let font = UIFont(name: "PixelMplus10-Regular", size: 17)
+        self.introTextView.font = font
     }
 
     override func didReceiveMemoryWarning() {
