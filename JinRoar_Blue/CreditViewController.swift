@@ -15,7 +15,7 @@ class CreditViewController: UIViewController ,UITableViewDelegate,UITableViewDat
     let CELL_ID = "CREDIT_CELL"
     private let sections : [String] = ["　開発者","　素材提供"]
     private let staffList:[Credit] = [Credit(name: "宮脇流士", position: "プロデューサー"),Credit(name: "秋山裕太", position: "プランナー"),Credit(name: "宇崎裕太", position: "クリエイター"),Credit(name: "瀬尾敦生", position: "テクニカルサポート"),Credit(name: "香川聖雄", position: "デバッガー")]
-    private let specialThx:[Credit] = [Credit(name:"テスト",position:"テスト"),Credit(name:"テスト",position:"テスト"),Credit(name:"テスト",position:"テスト")]
+    private let specialThx:[Credit] = [Credit(name: "Wikipedia 隠者(タロット)", position:"https://ja.wikipedia.org/wiki/隠者_(タロット)"),Credit(name: "Vector Open Stock", position:"http://free-illustrations.gatag.net"),Credit(name:"ICOOON-MONO", position:"http://icooon-mono.com")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
