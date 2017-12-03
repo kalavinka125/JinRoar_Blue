@@ -85,11 +85,8 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
         }else{
             cell.warewolfKillVoteLabel.text = ""
         }
-        /*
-        switch self.players[indexPath.row].roleID {
-            
-        }
-        */
+        
+        cell.roleCellImageView.image = UIImage(named: "\(self.players[indexPath.row].roleID)")
         
         return cell
     }
