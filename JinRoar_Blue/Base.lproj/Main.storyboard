@@ -532,7 +532,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-f0-8gA">
                                 <rect key="frame" x="16" y="118" width="288" height="383"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">宇崎裕太（以下、私）は、iOSアプリ Werewolf -俯瞰する隠遁者-（以下、「本アプリ」）を開発・運用しています。
+                                <mutableString key="text">宇崎裕太（以下、私）は、iOSアプリ Werewolf -俯瞰する隠遁者-（以下、「本アプリ」）を開発・運用しています。
 
 本アプリのご使用によって、本規約に同意して頂いたものとみなします。下記をよくお読み下さい。
 
@@ -554,7 +554,7 @@
 
 5.お問い合わせ先
 弓削商船高等専門学校　宇崎裕太
-kalavinak3190@gmail.com</string>
+kalavinka3190@gmail.com</mutableString>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
