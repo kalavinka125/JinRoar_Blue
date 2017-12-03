@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E2229101FD2826900E84EBB /* hermit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E22290F1FD2826900E84EBB /* hermit.png */; };
 		7E31ECD01FCEE39E00D5A916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31ECCF1FCEE39E00D5A916 /* AppDelegate.swift */; };
 		7E31ECD21FCEE39E00D5A916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31ECD11FCEE39E00D5A916 /* ViewController.swift */; };
 		7E31ECD51FCEE39E00D5A916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E31ECD31FCEE39E00D5A916 /* Main.storyboard */; };
@@ -23,12 +22,13 @@
 		7E31ED0B1FCEEFD800D5A916 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E31ED0A1FCEEFD100D5A916 /* MultipeerConnectivity.framework */; };
 		7E37A26F1FD0F5F600C40589 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37A26E1FD0F5F600C40589 /* Forecast.swift */; };
 		7E37A2731FD12E1400C40589 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37A2721FD12E1400C40589 /* CreditViewController.swift */; };
-		7E7F19111FCF9D9600FA7667 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E7F19101FCF9D9500FA7667 /* background.jpg */; };
+		7E6FC1101FD4188F00803848 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6FC10F1FD4188F00803848 /* PrivacyPolicyViewController.swift */; };
 		7E7F19131FCFD15900FA7667 /* GameWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F19121FCFD15900FA7667 /* GameWatchViewController.swift */; };
-		7E7F19151FCFD96A00FA7667 /* warewolf-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7F19141FCFD96A00FA7667 /* warewolf-logo.png */; };
 		7E7F19171FCFE54700FA7667 /* RoleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7F19161FCFE54700FA7667 /* RoleTableViewCell.swift */; };
 		7E7F191C1FD018C700FA7667 /* Jin-Roh.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E7F191B1FD018C700FA7667 /* Jin-Roh.csv */; };
 		7E7F191E1FD0D6F600FA7667 /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E7F191D1FD0D6F600FA7667 /* example.json */; };
+		7E99C1171FD38BF6008C5AA3 /* CreditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E99C1161FD38BF6008C5AA3 /* CreditTableViewCell.swift */; };
+		7E99C1191FD3AF27008C5AA3 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E99C1181FD3AF27008C5AA3 /* SupportViewController.swift */; };
 		7EF1E6911FD2B0CD00493FE2 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6901FD2B0CD00493FE2 /* DescriptionTableViewCell.swift */; };
 		7EF1E6931FD2E47800493FE2 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6921FD2E47800493FE2 /* OtherViewController.swift */; };
 		7EF1E6951FD2E88200493FE2 /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF1E6941FD2E88200493FE2 /* OtherTableViewCell.swift */; };
@@ -53,7 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7E22290F1FD2826900E84EBB /* hermit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hermit.png; sourceTree = "<group>"; };
 		7E31ECCC1FCEE39E00D5A916 /* JinRoar_Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinRoar_Blue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31ECCF1FCEE39E00D5A916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E31ECD11FCEE39E00D5A916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,12 +74,13 @@
 		7E31ED0A1FCEEFD100D5A916 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		7E37A26E1FD0F5F600C40589 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		7E37A2721FD12E1400C40589 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditViewController.swift; sourceTree = "<group>"; };
-		7E7F19101FCF9D9500FA7667 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		7E6FC10F1FD4188F00803848 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		7E7F19121FCFD15900FA7667 /* GameWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWatchViewController.swift; sourceTree = "<group>"; };
-		7E7F19141FCFD96A00FA7667 /* warewolf-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warewolf-logo.png"; sourceTree = "<group>"; };
 		7E7F19161FCFE54700FA7667 /* RoleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleTableViewCell.swift; sourceTree = "<group>"; };
 		7E7F191B1FD018C700FA7667 /* Jin-Roh.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Jin-Roh.csv"; sourceTree = "<group>"; };
 		7E7F191D1FD0D6F600FA7667 /* example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
+		7E99C1161FD38BF6008C5AA3 /* CreditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditTableViewCell.swift; sourceTree = "<group>"; };
+		7E99C1181FD3AF27008C5AA3 /* SupportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
 		7EF1E6901FD2B0CD00493FE2 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		7EF1E6921FD2E47800493FE2 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		7EF1E6941FD2E88200493FE2 /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
@@ -152,6 +152,8 @@
 				7E37A2721FD12E1400C40589 /* CreditViewController.swift */,
 				7EF1E6921FD2E47800493FE2 /* OtherViewController.swift */,
 				7EF1E6961FD2EEFF00493FE2 /* AboutAppViewController.swift */,
+				7E99C1181FD3AF27008C5AA3 /* SupportViewController.swift */,
+				7E6FC10F1FD4188F00803848 /* PrivacyPolicyViewController.swift */,
 			);
 			path = JinRoar_Blue;
 			sourceTree = "<group>";
@@ -196,10 +198,7 @@
 		7E7F191A1FD018B500FA7667 /* Material */ = {
 			isa = PBXGroup;
 			children = (
-				7E22290F1FD2826900E84EBB /* hermit.png */,
 				7E7F191D1FD0D6F600FA7667 /* example.json */,
-				7E7F19101FCF9D9500FA7667 /* background.jpg */,
-				7E7F19141FCFD96A00FA7667 /* warewolf-logo.png */,
 				7E7F191B1FD018C700FA7667 /* Jin-Roh.csv */,
 			);
 			path = Material;
@@ -209,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				7E7F19161FCFE54700FA7667 /* RoleTableViewCell.swift */,
+				7E99C1161FD38BF6008C5AA3 /* CreditTableViewCell.swift */,
 				7EF1E6901FD2B0CD00493FE2 /* DescriptionTableViewCell.swift */,
 				7EF1E6941FD2E88200493FE2 /* OtherTableViewCell.swift */,
 			);
@@ -328,10 +328,7 @@
 				7E31ECD71FCEE39E00D5A916 /* Assets.xcassets in Resources */,
 				7E31ED041FCEE47800D5A916 /* PixelMplus12-Regular.ttf in Resources */,
 				7E7F191E1FD0D6F600FA7667 /* example.json in Resources */,
-				7E2229101FD2826900E84EBB /* hermit.png in Resources */,
 				7E31ED031FCEE47800D5A916 /* PixelMplus10-Regular.ttf in Resources */,
-				7E7F19151FCFD96A00FA7667 /* warewolf-logo.png in Resources */,
-				7E7F19111FCF9D9600FA7667 /* background.jpg in Resources */,
 				7E31ECD51FCEE39E00D5A916 /* Main.storyboard in Resources */,
 				7E31ED011FCEE47800D5A916 /* PixelMplus10-Bold.ttf in Resources */,
 			);
@@ -359,7 +356,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF1E6971FD2EEFF00493FE2 /* AboutAppViewController.swift in Sources */,
+				7E6FC1101FD4188F00803848 /* PrivacyPolicyViewController.swift in Sources */,
 				7EF1E6911FD2B0CD00493FE2 /* DescriptionTableViewCell.swift in Sources */,
+				7E99C1191FD3AF27008C5AA3 /* SupportViewController.swift in Sources */,
+				7E99C1171FD38BF6008C5AA3 /* CreditTableViewCell.swift in Sources */,
 				7EF1E6931FD2E47800493FE2 /* OtherViewController.swift in Sources */,
 				7EF1E6951FD2E88200493FE2 /* OtherTableViewCell.swift in Sources */,
 				7E37A2731FD12E1400C40589 /* CreditViewController.swift in Sources */,
