@@ -14,6 +14,7 @@ struct Player : Codable{
     let roleID:Int
     let targetID:Int
     let killVote:Int
+    let isWin:Int
 }
 
 struct Forecast: Codable {
