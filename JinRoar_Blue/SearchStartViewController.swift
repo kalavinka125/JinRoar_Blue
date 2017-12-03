@@ -24,7 +24,7 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
     //説明 テーブル
     @IBOutlet weak var descriptionTableView: UITableView!
     private let CELL_ID = "DESCRIPTION_CELL"
-    private let descriptionText = ["まず、「Are you a Werewolf?」を別デバイスで起動するがいい。","「Are you a Werewolf?」タイトル画面から「Connect \"HERMIT\"」を押し給え。","このアプリに接続要請が来るゆえ、許可せよ。","時が経てば次の画面に移るだろう。"]
+    private let descriptionText = ["まず、「狼狂する猜疑心」を別デバイスで起動するがいい。","「狼狂する猜疑心」タイトル画面から「Connect \"HERMIT\"」を押し給え。","このアプリに接続要請が来るゆえ、許可せよ。","時が経てば次の画面に移るだろう。しばし待たれよ。"]
     
     
     @IBOutlet weak var manualTableView: UITableView!
@@ -64,7 +64,11 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func backButtonTapped(_ sender: Any) {
+        assistant.stop()
+        self.dismiss(animated: true, completion:nil)
+    }
+    
     func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
         self.dismiss(animated: true, completion: nil)
     }
