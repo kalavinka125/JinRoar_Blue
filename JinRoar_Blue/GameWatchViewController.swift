@@ -73,7 +73,24 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
         default:
             print("isAliveError")
         }
-        cell.roleCellImageView.image = UIImage(named: "\(self.players[indexPath.row].roleID)")
+        
+        // ?をつけることでOptional型に
+        let roleImage:UIImage? = UIImage(named:"\(self.players[indexPath.row].roleID)")
+        // Optional Bindingでnilチェック
+        if roleImage == nil{
+            cell.roleCellImageView.image = UIImage(named:"\(self.players[indexPath.row].roleID)" )
+        } else {
+            // 画像がなかった場合の処理
+            cell.roleCellImageView.image = UIImage(named: "-1")
+        }
+        
+        /*
+        if UIImage(self.players[indexPath.row].roleID) == nil{
+            cell.roleCellImageView.image = UIImage(named: "\(self.players[indexPath.row].roleID)")
+        }else{
+            cell.roleCellImageView.image = UIImage(named: "\(-1)")
+        }
+        */
         //ターゲットネーム
         if self.players[indexPath.row].targetID != -1 {
             cell.abilityTargetLabel.text = "対象：\(self.players[players[indexPath.row].targetID].name)"
