@@ -60,19 +60,20 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
     //セルの内容を変えろ indexPathの番号 = 配列インデックス
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.CELL_ID, for: indexPath) as! RoleTableViewCell
-        //名前
-        cell.playerNameLabel.text = self.players[indexPath.row].name
+        
         //生死により画面のハイライトオン・オフ
         switch self.players[indexPath.row].isAlive{
         case 0:
             cell.playerNameLabel.textColor = UIColor.red
-            cell.roleCellImageView.isHighlighted = false
+            //名前
+            cell.playerNameLabel.text = ("死亡：\(self.players[indexPath.row].name)")
         case 1:
             cell.playerNameLabel.textColor = UIColor.green
-            cell.roleCellImageView.isHighlighted = true
+            cell.playerNameLabel.text = ("生存：\(self.players[indexPath.row].name)")
         default:
             print("isAliveError")
         }
+        cell.roleCellImageView.image = UIImage(named: "\(self.players[indexPath.row].roleID)")
         //ターゲットネーム
         if self.players[indexPath.row].targetID != -1 {
             cell.abilityTargetLabel.text = "対象：\(self.players[players[indexPath.row].targetID].name)"
@@ -81,12 +82,16 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
         }
         //人狼投票
         if self.players[indexPath.row].killVote != -1 {
-            cell.warewolfKillVoteLabel.text = "人狼：\(String(self.players[indexPath.row].killVote))"
+            cell.warewolfKillVoteLabel.text = "人狼：\(String(self.players[indexPath.row].killVote))票"
         }else{
             cell.warewolfKillVoteLabel.text = ""
         }
         
-        cell.roleCellImageView.image = UIImage(named: "\(self.players[indexPath.row].roleID)")
+        if(self.players[indexPath.row].isWin == 0){
+            cell.trophyImageView.isHidden = true
+        }else if(self.players[indexPath.row].isWin == 1){
+            cell.trophyImageView.isHidden = false
+        }
         
         return cell
     }
@@ -128,7 +133,7 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
                 self.updated = decodeData.updated
                 //プレイヤー配列を格納
                 for value in decodeData.players {
-                    let tempPlayer = Player(id: value.id, name: value.name, isAlive: value.isAlive, roleID: value.roleID, targetID: value.targetID, killVote: value.killVote)
+                    let tempPlayer = Player(id: value.id, name: value.name, isAlive: value.isAlive, roleID: value.roleID, targetID: value.targetID, killVote: value.killVote,isWin:value.isWin)
                     self.players.append(tempPlayer)
                 }
             }catch{
