@@ -31,8 +31,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="俯瞰する隠遁者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBQ-OL-vJ7">
-                                <rect key="frame" x="99" y="66" width="122" height="19"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俯瞰する隠遁者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBQ-OL-vJ7">
+                                <rect key="frame" x="99" y="64" width="122" height="19"/>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,29 +65,23 @@
                                     <segue destination="Jnj-nj-MDa" kind="show" id="KkZ-ic-Mai"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9w-Vp-mJM">
-                                <rect key="frame" x="0.0" y="20" width="320" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9w-Vp-mJM">
+                                <rect key="frame" x="0.0" y="20" width="320" height="33"/>
                                 <fontDescription key="fontDescription" name="PixelMplus12-Bold" family="PixelMplus12" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hermit.png" translatesAutoresizingMaskIntoConstraints="NO" id="9Dt-Os-bAR">
-                                <rect key="frame" x="60" y="118" width="200" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="9Dt-Os-bAR" secondAttribute="height" multiplier="2:3" id="A9T-du-obK"/>
-                                    <constraint firstAttribute="width" secondItem="9Dt-Os-bAR" secondAttribute="height" multiplier="2:3" id="jy1-0b-mvn"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hermit" translatesAutoresizingMaskIntoConstraints="NO" id="9Dt-Os-bAR">
+                                <rect key="frame" x="75" y="149" width="170" height="270"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="w9w-Vp-mJM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0SH-el-eQc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Dt-Os-bAR" secondAttribute="trailing" constant="60" id="4lw-Za-duE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pRN-uo-Hr3" secondAttribute="trailing" constant="16" id="5lA-he-hje"/>
                             <constraint firstItem="w9w-Vp-mJM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6VH-5U-7Tg"/>
                             <constraint firstItem="w9w-Vp-mJM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RDO-IK-UiV"/>
-                            <constraint firstItem="9Dt-Os-bAR" firstAttribute="top" secondItem="BBQ-OL-vJ7" secondAttribute="bottom" constant="30" id="TYi-1V-oSY"/>
-                            <constraint firstItem="9Dt-Os-bAR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="WYF-WV-SO0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pix-ah-XWQ" secondAttribute="trailing" constant="16" id="ZUv-Jg-CS6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BBQ-OL-vJ7" secondAttribute="trailing" constant="99" id="bjg-mA-oO3"/>
                             <constraint firstItem="BBQ-OL-vJ7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="ccF-sN-UYu"/>
@@ -96,7 +90,6 @@
                             <constraint firstItem="BBQ-OL-vJ7" firstAttribute="top" secondItem="w9w-Vp-mJM" secondAttribute="bottom" constant="11" id="s3e-l8-n5V"/>
                             <constraint firstItem="pRN-uo-Hr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="su8-gg-ucd"/>
                             <constraint firstItem="Pix-ah-XWQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ujS-gL-eFX"/>
-                            <constraint firstItem="pRN-uo-Hr3" firstAttribute="top" secondItem="9Dt-Os-bAR" secondAttribute="bottom" constant="30" id="wLv-VZ-NJX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -113,20 +106,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="r5c-a1-Ueu">
-                                <rect key="frame" x="0.0" y="60" width="320" height="196"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="r5c-a1-Ueu">
+                                <rect key="frame" x="0.0" y="59" width="320" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="r5c-a1-Ueu" secondAttribute="height" multiplier="80:49" id="s3G-MS-9nj"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="隠遁者の夜を楽しむがよい・・・。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGm-Tl-5XT">
-                                <rect key="frame" x="16" y="528" width="288" height="20"/>
+                                <rect key="frame" x="16" y="529" width="288" height="19"/>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fR2-7o-dpa">
-                                <rect key="frame" x="16" y="261" width="288" height="259"/>
+                                <rect key="frame" x="16" y="260" width="288" height="261"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DESCRIPTION_CELL" rowHeight="110" id="y4M-nh-ifg" customClass="DescriptionTableViewCell" customModule="JinRoar_Blue" customModuleProvider="target">
@@ -171,7 +164,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcf-Je-wxE">
-                                <rect key="frame" x="16" y="20" width="145" height="32"/>
+                                <rect key="frame" x="16" y="20" width="145" height="31"/>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                 <state key="normal" title="&lt;&lt; トップページへ"/>
                                 <connections>
@@ -179,7 +172,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="このアプリは「Where is a &quot;Werwolf&quot;? -狼狂する猜疑心-」用観戦アプリだ。  以下に連携の手順を示そう・・・。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHs-Jq-nBL">
-                                <rect key="frame" x="16" y="103" width="288" height="111"/>
+                                <rect key="frame" x="16" y="102" width="288" height="111"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.6327589897260274" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -397,20 +390,222 @@
             </objects>
             <point key="canvasLocation" x="1661.25" y="755.28169014084506"/>
         </scene>
-        <!--View Controller-->
+        <!--Support View Controller-->
         <scene sceneID="t9Y-U3-uIf">
             <objects>
-                <viewController id="s0h-HW-KBk" sceneMemberID="viewController">
+                <viewController id="s0h-HW-KBk" customClass="SupportViewController" customModule="JinRoar_Blue" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KsO-WQ-UpR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LuY-Rk-hCv">
+                                <rect key="frame" x="16" y="509" width="288" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="i3j-go-IQe"/>
+                                    <constraint firstAttribute="width" constant="288" id="qpi-di-l6b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="24"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="s0h-HW-KBk" eventType="touchUpInside" id="Ly3-eB-Xbe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIu-eN-b4e">
+                                <rect key="frame" x="16" y="462" width="288" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Tx4-tQ-NuB"/>
+                                    <constraint firstAttribute="width" constant="288" id="nY4-QH-c51"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="24"/>
+                                <state key="normal" title="お問い合わせ">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedRequestButton:" destination="s0h-HW-KBk" eventType="touchUpInside" id="Kmz-K6-3nQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPX-dU-ULz">
+                                <rect key="frame" x="16" y="415" width="288" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="w12-8D-xof"/>
+                                    <constraint firstAttribute="width" constant="288" id="z3o-S7-IaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="24"/>
+                                <state key="normal" title="プライバシーポリシー">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lqf-9Z-InG" kind="presentation" id="NSL-UF-2Hz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bao-YQ-0gU">
+                                <rect key="frame" x="0.0" y="20" width="320" height="33"/>
+                                <fontDescription key="fontDescription" name="PixelMplus12-Bold" family="PixelMplus12" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俯瞰する隠遁者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtZ-pQ-RXV">
+                                <rect key="frame" x="99" y="61" width="122" height="19"/>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yuta Uzaki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4k-GW-uYW">
+                                <rect key="frame" x="16" y="160" width="288" height="19"/>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宇崎　裕太" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLb-Ca-LM7">
+                                <rect key="frame" x="16" y="133" width="288" height="19"/>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mailbox" translatesAutoresizingMaskIntoConstraints="NO" id="HHP-Ye-wHN">
+                                <rect key="frame" x="16" y="201" width="288" height="167"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="trailing" secondItem="NtZ-pQ-RXV" secondAttribute="trailing" constant="99" id="0nS-M1-0hv"/>
+                            <constraint firstItem="g4k-GW-uYW" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" constant="16" id="0wY-a7-Gnv"/>
+                            <constraint firstItem="bao-YQ-0gU" firstAttribute="trailing" secondItem="NZ4-BW-UkV" secondAttribute="trailing" id="3pN-pY-HFo"/>
+                            <constraint firstItem="LuY-Rk-hCv" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" constant="16" id="463-qg-Qwv"/>
+                            <constraint firstItem="g4k-GW-uYW" firstAttribute="top" secondItem="mLb-Ca-LM7" secondAttribute="bottom" constant="8" id="6DM-3K-RBk"/>
+                            <constraint firstItem="LuY-Rk-hCv" firstAttribute="top" secondItem="eIu-eN-b4e" secondAttribute="bottom" constant="8" id="6xM-HX-VKM"/>
+                            <constraint firstItem="mLb-Ca-LM7" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" constant="16" id="8Sy-Dt-pQo"/>
+                            <constraint firstItem="eIu-eN-b4e" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" constant="16" id="Fdu-AY-gsH"/>
+                            <constraint firstItem="eIu-eN-b4e" firstAttribute="top" secondItem="SPX-dU-ULz" secondAttribute="bottom" constant="8" id="Jen-cY-Cgr"/>
+                            <constraint firstItem="NtZ-pQ-RXV" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" constant="99" id="KfS-s2-FQd"/>
+                            <constraint firstItem="bao-YQ-0gU" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" id="NdC-7O-UEU"/>
+                            <constraint firstItem="bao-YQ-0gU" firstAttribute="top" secondItem="NZ4-BW-UkV" secondAttribute="top" id="Q5i-LV-teZ"/>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="trailing" secondItem="mLb-Ca-LM7" secondAttribute="trailing" constant="16" id="QlQ-NX-8Mg"/>
+                            <constraint firstItem="NtZ-pQ-RXV" firstAttribute="top" secondItem="bao-YQ-0gU" secondAttribute="bottom" constant="8" id="Smj-J3-n4U"/>
+                            <constraint firstItem="NtZ-pQ-RXV" firstAttribute="top" secondItem="bao-YQ-0gU" secondAttribute="bottom" constant="8" id="VQH-f0-KYz"/>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="trailing" secondItem="eIu-eN-b4e" secondAttribute="trailing" constant="16" id="W93-mU-Szn"/>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="trailing" secondItem="g4k-GW-uYW" secondAttribute="trailing" constant="16" id="b4J-eb-dDa"/>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="trailing" secondItem="SPX-dU-ULz" secondAttribute="trailing" constant="16" id="b5Z-8j-64F"/>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="bottom" secondItem="LuY-Rk-hCv" secondAttribute="bottom" constant="20" id="eDj-en-HwF"/>
+                            <constraint firstItem="mLb-Ca-LM7" firstAttribute="top" secondItem="NtZ-pQ-RXV" secondAttribute="bottom" constant="53" id="iBT-92-Lhy"/>
+                            <constraint firstItem="NZ4-BW-UkV" firstAttribute="trailing" secondItem="LuY-Rk-hCv" secondAttribute="trailing" constant="16" id="iqD-PT-Q0f"/>
+                            <constraint firstItem="SPX-dU-ULz" firstAttribute="leading" secondItem="NZ4-BW-UkV" secondAttribute="leading" constant="16" id="jyB-je-NTb"/>
+                            <constraint firstItem="eIu-eN-b4e" firstAttribute="top" secondItem="SPX-dU-ULz" secondAttribute="bottom" constant="8" id="sh7-CV-kd5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NZ4-BW-UkV"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OGV-oC-foX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="1703"/>
+            <point key="canvasLocation" x="787.5" y="1725"/>
+        </scene>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="b27-a4-HRb">
+            <objects>
+                <viewController id="lqf-9Z-InG" customClass="PrivacyPolicyViewController" customModule="JinRoar_Blue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYG-94-sn7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSV-G1-Yhy">
+                                <rect key="frame" x="16" y="509" width="288" height="39"/>
+                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="doF-ZK-rIG"/>
+                                    <constraint firstAttribute="height" constant="39" id="hxK-ze-rj0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="24"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="s0h-HW-KBk" eventType="touchUpInside" id="9fk-rF-vS7"/>
+                                    <action selector="backButtonTapped:" destination="lqf-9Z-InG" eventType="touchUpInside" id="VDN-KB-NLf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-f0-8gA">
+                                <rect key="frame" x="16" y="118" width="288" height="383"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">宇崎裕太（以下、私）は、iOSアプリ Werewolf -俯瞰する隠遁者-（以下、「本アプリ」）を開発・運用しています。
+
+本アプリのご使用によって、本規約に同意して頂いたものとみなします。下記をよくお読み下さい。
+
+
+1.情報の利用について
+本アプリは、個人情報に繋がる情報を収集・保存しません。 
+2.セキュリティ
+電子端末において100%安全と言える保存方法はありません。私はセキュリティ確保に努めておりますが、完全なセキュリティの保証はできません。
+
+3.プライバシーポリシーの変更
+私は、本ポリシーを変更できるものとします。本規約の変更に関する通知はこのページでご確認下さいますようお願いします。
+
+私はユーザの皆様の同意なしに、個人情報を取得するような規約への変更やその他重大な変更を行うことはありません。
+
+4.免責事項
+私は、本アプリがユーザの特定の目的に適合すること、期待する機能・商品的価値・正確性・有用性を有すること、および不具合が生じないことについて、何ら保証するものではありません。
+
+私は、私の都合により本アプリの仕様を変更し、または提供を終了することができます。私は本アプリの提供の終了、変更、または利用不能、本アプリの利用によるデータの消失または機械の故障もしくは損傷、その他本アプリに関してユーザが被った損害につき、賠償する責任を一切負わないものとします。
+
+5.お問い合わせ先
+弓削商船高等専門学校　宇崎裕太
+kalavinak3190@gmail.com</string>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="si6-o0-zob">
+                                <rect key="frame" x="0.0" y="20" width="320" height="33"/>
+                                <fontDescription key="fontDescription" name="PixelMplus12-Bold" family="PixelMplus12" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俯瞰する隠遁者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-6L-TWE">
+                                <rect key="frame" x="99" y="61" width="122" height="19"/>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プライバシーポリシー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="514-ed-tnW">
+                                <rect key="frame" x="16" y="88" width="288" height="22"/>
+                                <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PoJ-Ri-1Eo" firstAttribute="trailing" secondItem="NSV-G1-Yhy" secondAttribute="trailing" constant="16" id="0NI-5X-XNS"/>
+                            <constraint firstItem="yOa-6L-TWE" firstAttribute="leading" secondItem="PoJ-Ri-1Eo" secondAttribute="leading" constant="99" id="0zr-mx-ZAz"/>
+                            <constraint firstItem="yOa-6L-TWE" firstAttribute="top" secondItem="si6-o0-zob" secondAttribute="bottom" constant="8" id="3i9-NF-pGl"/>
+                            <constraint firstItem="NSV-G1-Yhy" firstAttribute="top" secondItem="b9E-f0-8gA" secondAttribute="bottom" constant="8" id="6yN-uR-tdZ"/>
+                            <constraint firstItem="si6-o0-zob" firstAttribute="top" secondItem="PoJ-Ri-1Eo" secondAttribute="top" id="7gY-s1-qjk"/>
+                            <constraint firstItem="si6-o0-zob" firstAttribute="trailing" secondItem="PoJ-Ri-1Eo" secondAttribute="trailing" id="8kU-or-9qZ"/>
+                            <constraint firstItem="PoJ-Ri-1Eo" firstAttribute="trailing" secondItem="b9E-f0-8gA" secondAttribute="trailing" constant="16" id="DDQ-Js-FUS"/>
+                            <constraint firstItem="PoJ-Ri-1Eo" firstAttribute="bottom" secondItem="NSV-G1-Yhy" secondAttribute="bottom" constant="20" id="DOc-S3-ekp"/>
+                            <constraint firstItem="b9E-f0-8gA" firstAttribute="top" secondItem="514-ed-tnW" secondAttribute="bottom" constant="8" id="EAf-ug-TRk"/>
+                            <constraint firstItem="NSV-G1-Yhy" firstAttribute="leading" secondItem="PoJ-Ri-1Eo" secondAttribute="leading" constant="16" id="Em3-fq-8Mu"/>
+                            <constraint firstItem="514-ed-tnW" firstAttribute="leading" secondItem="PoJ-Ri-1Eo" secondAttribute="leading" constant="16" id="LEJ-8E-8EI"/>
+                            <constraint firstItem="514-ed-tnW" firstAttribute="top" secondItem="yOa-6L-TWE" secondAttribute="bottom" constant="8" id="WgR-nZ-8xJ"/>
+                            <constraint firstItem="PoJ-Ri-1Eo" firstAttribute="trailing" secondItem="514-ed-tnW" secondAttribute="trailing" constant="16" id="bDf-h8-T0M"/>
+                            <constraint firstItem="si6-o0-zob" firstAttribute="leading" secondItem="PoJ-Ri-1Eo" secondAttribute="leading" id="eJA-bR-6xq"/>
+                            <constraint firstItem="PoJ-Ri-1Eo" firstAttribute="trailing" secondItem="yOa-6L-TWE" secondAttribute="trailing" constant="99" id="q2L-J4-5sm"/>
+                            <constraint firstItem="b9E-f0-8gA" firstAttribute="leading" secondItem="PoJ-Ri-1Eo" secondAttribute="leading" constant="16" id="vBm-4N-bcR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PoJ-Ri-1Eo"/>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="b9E-f0-8gA" id="bbQ-k2-n9d"/>
+                        <outlet property="titleLabel" destination="514-ed-tnW" id="VFu-hT-g3H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ei-NU-jjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1526.25" y="2100"/>
         </scene>
         <!--Credit View Controller-->
         <scene sceneID="usG-dK-IQh">
@@ -421,19 +616,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2d-8q-NLB">
-                                <rect key="frame" x="0.0" y="20" width="320" height="35"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="33"/>
                                 <fontDescription key="fontDescription" name="PixelMplus12-Bold" family="PixelMplus12" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俯瞰する隠遁者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="If4-6x-pPN">
-                                <rect key="frame" x="99" y="66" width="122" height="20"/>
+                                <rect key="frame" x="99" y="64" width="122" height="19"/>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lSn-YK-P0s">
-                                <rect key="frame" x="16" y="94" width="288" height="402"/>
+                                <rect key="frame" x="16" y="91" width="288" height="405"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CREDIT_CELL" rowHeight="65" id="U6K-XG-QPN" customClass="CreditTableViewCell" customModule="JinRoar_Blue" customModuleProvider="target">
@@ -444,7 +639,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="□" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VT-pu-o2m">
-                                                    <rect key="frame" x="15" y="21" width="17" height="20"/>
+                                                    <rect key="frame" x="15" y="21" width="17" height="19"/>
                                                     <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -530,7 +725,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="835-kA-Hek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="1590"/>
+            <point key="canvasLocation" x="1965" y="1500"/>
         </scene>
         <!--Game Watch View Controller-->
         <scene sceneID="8f2-hC-a82">
@@ -554,9 +749,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1gL-Nm-CUg">
                                 <rect key="frame" x="0.0" y="72" width="320" height="496"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="RPK-Nl-igy"/>
-                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="roleCell" rowHeight="103" id="CkP-N9-lDX" customClass="RoleTableViewCell" customModule="JinRoar_Blue" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="103"/>
@@ -572,53 +764,57 @@
                                                         <constraint firstAttribute="height" constant="90" id="fla-mi-HUq"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rr-Ng-ge5">
-                                                    <rect key="frame" x="98" y="72" width="222" height="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さらば我が宿命、さらば我が友よ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rr-Ng-ge5">
+                                                    <rect key="frame" x="98" y="71" width="182" height="25"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Jo0-iD-hUp"/>
-                                                        <constraint firstAttribute="height" constant="30" id="Q4f-PL-FFe"/>
-                                                        <constraint firstAttribute="width" constant="222" id="a9N-JN-XJZ"/>
+                                                        <constraint firstAttribute="width" constant="182" id="s1T-VA-s5e"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhR-VG-nYF">
-                                                    <rect key="frame" x="98" y="0.0" width="222" height="33"/>
-                                                    <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="私はヘルメスの鳥。私は自らの羽根を喰らい飼いならされる。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhR-VG-nYF">
+                                                    <rect key="frame" x="98" y="6" width="222" height="29"/>
+                                                    <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="対象：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZg-mN-jmv">
-                                                    <rect key="frame" x="98" y="35" width="222" height="32"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="対象：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZg-mN-jmv">
+                                                    <rect key="frame" x="98" y="43.5" width="222" height="24.5"/>
                                                     <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="trophy_gold" translatesAutoresizingMaskIntoConstraints="NO" id="i5Z-0A-SSz">
+                                                    <rect key="frame" x="288" y="67" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="SId-fV-1cr"/>
+                                                        <constraint firstAttribute="height" constant="30" id="kLk-26-SZk"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="LhR-VG-nYF" secondAttribute="trailing" id="0FE-bM-1yo"/>
-                                                <constraint firstAttribute="bottom" secondItem="8Rr-Ng-ge5" secondAttribute="bottom" id="0lm-Qt-WBh"/>
-                                                <constraint firstItem="8Rr-Ng-ge5" firstAttribute="top" secondItem="QZg-mN-jmv" secondAttribute="bottom" constant="5" id="2mJ-OA-Gf1"/>
-                                                <constraint firstAttribute="bottom" secondItem="8Rr-Ng-ge5" secondAttribute="bottom" id="9WA-KC-ljX"/>
-                                                <constraint firstItem="QZg-mN-jmv" firstAttribute="top" secondItem="LhR-VG-nYF" secondAttribute="bottom" constant="2" id="EXD-9l-ezP"/>
+                                                <constraint firstAttribute="trailing" secondItem="i5Z-0A-SSz" secondAttribute="trailing" constant="2" id="6KS-az-yxR"/>
+                                                <constraint firstAttribute="bottom" secondItem="8Rr-Ng-ge5" secondAttribute="bottom" constant="6.5" id="GAk-jb-MvC"/>
+                                                <constraint firstAttribute="bottom" secondItem="i5Z-0A-SSz" secondAttribute="bottom" constant="5.5" id="KfT-Lo-E56"/>
+                                                <constraint firstItem="LhR-VG-nYF" firstAttribute="leading" secondItem="CYR-af-E2Q" secondAttribute="trailing" constant="8" id="Mhg-pE-LBK"/>
                                                 <constraint firstAttribute="bottom" secondItem="CYR-af-E2Q" secondAttribute="bottom" constant="6.5" id="QWe-ex-tdl"/>
-                                                <constraint firstItem="8Rr-Ng-ge5" firstAttribute="top" secondItem="QZg-mN-jmv" secondAttribute="bottom" constant="5" id="agy-z4-s2h"/>
+                                                <constraint firstItem="8Rr-Ng-ge5" firstAttribute="top" secondItem="QZg-mN-jmv" secondAttribute="bottom" constant="3" id="dj0-AG-RxV"/>
+                                                <constraint firstAttribute="trailing" secondItem="LhR-VG-nYF" secondAttribute="trailing" id="dwg-ht-mOl"/>
+                                                <constraint firstItem="LhR-VG-nYF" firstAttribute="top" secondItem="LAE-5j-rYv" secondAttribute="top" constant="6" id="e6J-HY-NqM"/>
+                                                <constraint firstItem="8Rr-Ng-ge5" firstAttribute="leading" secondItem="CYR-af-E2Q" secondAttribute="trailing" constant="8" id="ea7-xr-kka"/>
+                                                <constraint firstItem="QZg-mN-jmv" firstAttribute="top" secondItem="LhR-VG-nYF" secondAttribute="bottom" constant="8.5" id="hYo-XL-LyZ"/>
                                                 <constraint firstItem="CYR-af-E2Q" firstAttribute="leading" secondItem="LAE-5j-rYv" secondAttribute="leading" id="jFQ-5P-5nw"/>
                                                 <constraint firstAttribute="trailing" secondItem="QZg-mN-jmv" secondAttribute="trailing" id="jWO-oV-GWz"/>
                                                 <constraint firstItem="QZg-mN-jmv" firstAttribute="leading" secondItem="CYR-af-E2Q" secondAttribute="trailing" constant="8" id="mIT-T0-Xkf"/>
-                                                <constraint firstItem="LhR-VG-nYF" firstAttribute="top" secondItem="LAE-5j-rYv" secondAttribute="top" id="nyd-Vq-LJd"/>
-                                                <constraint firstItem="8Rr-Ng-ge5" firstAttribute="leading" secondItem="CYR-af-E2Q" secondAttribute="trailing" constant="8" id="s14-zh-y1O"/>
-                                                <constraint firstAttribute="trailing" secondItem="8Rr-Ng-ge5" secondAttribute="trailing" id="uys-3w-ZoF"/>
-                                                <constraint firstAttribute="bottom" secondItem="8Rr-Ng-ge5" secondAttribute="bottom" id="vf0-bR-eb8"/>
                                                 <constraint firstItem="CYR-af-E2Q" firstAttribute="top" secondItem="LAE-5j-rYv" secondAttribute="top" constant="6" id="yLS-JK-3Mn"/>
-                                                <constraint firstItem="LhR-VG-nYF" firstAttribute="leading" secondItem="CYR-af-E2Q" secondAttribute="trailing" constant="8" id="zVj-QK-val"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="abilityTargetLabel" destination="QZg-mN-jmv" id="Ui2-st-9ng"/>
                                             <outlet property="playerNameLabel" destination="LhR-VG-nYF" id="uBg-hY-Esq"/>
                                             <outlet property="roleCellImageView" destination="CYR-af-E2Q" id="GPo-7f-UYN"/>
+                                            <outlet property="trophyImageView" destination="i5Z-0A-SSz" id="NUP-Zc-QvO"/>
                                             <outlet property="warewolfKillVoteLabel" destination="8Rr-Ng-ge5" id="IRR-2n-KHQ"/>
                                         </connections>
                                     </tableViewCell>
@@ -638,13 +834,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="1gL-Nm-CUg" firstAttribute="leading" secondItem="6FU-qq-ocQ" secondAttribute="leading" id="CMh-7j-cDX"/>
-                            <constraint firstItem="1gL-Nm-CUg" firstAttribute="bottom" secondItem="6FU-qq-ocQ" secondAttribute="bottom" id="Hcu-3A-5dv"/>
+                            <constraint firstItem="1gL-Nm-CUg" firstAttribute="bottom" secondItem="6FU-qq-ocQ" secondAttribute="bottom" id="E4s-Sf-Gmr"/>
                             <constraint firstItem="M92-6R-eUY" firstAttribute="leading" secondItem="6FU-qq-ocQ" secondAttribute="leading" id="ICd-a1-4Uw"/>
                             <constraint firstItem="6FU-qq-ocQ" firstAttribute="trailing" secondItem="jOM-KM-3ra" secondAttribute="trailing" id="P7S-Xw-kVN"/>
+                            <constraint firstItem="1gL-Nm-CUg" firstAttribute="trailing" secondItem="6FU-qq-ocQ" secondAttribute="trailing" id="PbE-dI-ayf"/>
                             <constraint firstItem="jOM-KM-3ra" firstAttribute="top" secondItem="6FU-qq-ocQ" secondAttribute="top" id="QCr-Xa-ZHJ"/>
+                            <constraint firstItem="1gL-Nm-CUg" firstAttribute="leading" secondItem="6FU-qq-ocQ" secondAttribute="leading" id="j8e-28-Tx9"/>
                             <constraint firstItem="jOM-KM-3ra" firstAttribute="leading" secondItem="M92-6R-eUY" secondAttribute="trailing" id="lcf-GC-uuj"/>
-                            <constraint firstItem="1gL-Nm-CUg" firstAttribute="trailing" secondItem="6FU-qq-ocQ" secondAttribute="trailing" id="lo3-vc-9Fe"/>
                             <constraint firstItem="1gL-Nm-CUg" firstAttribute="top" secondItem="M92-6R-eUY" secondAttribute="bottom" constant="8" id="nh5-qA-fct"/>
                             <constraint firstItem="1gL-Nm-CUg" firstAttribute="top" secondItem="jOM-KM-3ra" secondAttribute="bottom" constant="8" id="pRc-jH-tbJ"/>
                             <constraint firstItem="M92-6R-eUY" firstAttribute="top" secondItem="6FU-qq-ocQ" secondAttribute="top" id="xbV-bq-4YX"/>
@@ -663,7 +859,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background.jpg" width="1240" height="768"/>
-        <image name="hermit.png" width="425" height="876"/>
+        <image name="background" width="1240" height="768"/>
+        <image name="hermit" width="425" height="876"/>
+        <image name="mailbox" width="512" height="512"/>
+        <image name="trophy_gold" width="362" height="400"/>
     </resources>
 </document>
