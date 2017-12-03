@@ -10,7 +10,8 @@
             "isAlive":1,
             "roleID": 1,
             "targetID":-1,
-            "killVote":-1
+            "killVote":-1,
+            "isWin":0
         },
         {
             "id":1,
@@ -18,7 +19,8 @@
             "isAlive":1,
             "roleID":2,
             "targetID":0,
-            "killVote":-1
+            "killVote":-1,
+            "isWin":0
         },
         {
           "id":2,
@@ -26,7 +28,8 @@
           "isAlive":1,
           "roleID":0,
           "targetID":-1,
-          "killVote":-1
+          "killVote":-1,
+          "isWin":0
         },
         {
           "id":3,
@@ -34,7 +37,8 @@
           "isAlive":1,
           "roleID":0,
           "targetID":-1,
-          "killVote":-1
+          "killVote":-1,
+          "isWin":0
         }
     ]
 }
