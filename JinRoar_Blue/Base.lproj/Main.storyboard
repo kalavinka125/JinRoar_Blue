@@ -171,7 +171,7 @@
                                     <action selector="backButtonTapped:" destination="Bt3-ac-I7F" eventType="touchUpInside" id="Vku-G0-p40"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="このアプリは「Where is a &quot;Werwolf&quot;? -狼狂する猜疑心-」用観戦アプリだ。  以下に連携の手順を示そう・・・。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHs-Jq-nBL">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="このアプリは「Where is a &quot;Werwolf&quot;? -狼狂する猜疑心-」用観戦アプリだ。 以下に連携の手順を示そう・・・。 必ず読み給え。特に最後が重要だ。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHs-Jq-nBL">
                                 <rect key="frame" x="16" y="102" width="288" height="111"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.6327589897260274" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="PixelMplus10-Regular" family="PixelMplus10" pointSize="17"/>
