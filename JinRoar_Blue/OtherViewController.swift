@@ -15,6 +15,11 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
     private let list = ["このアプリについて","オプション","クレジット","開発サポート"]
     private let CELL_ID = "OTHER_CELL"
     
+    private let GO_TO_ABOUTAPP_SEGUE = "GO_TO_ABOUTAPP"
+    private let GO_TO_CREDIT_SEGUE = "GO_TO_CREDIT"
+    private let GO_TO_OPTION = "GO_TO_OPTION"
+    private let GO_TO_SUPPORT_SEGUE = "GO_TO_SUPPORT"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +56,17 @@ class OtherViewController: UIViewController,UITableViewDataSource,UITableViewDel
         cell.numberLabel.text = "□"
         cell.nameLabel.text = list[indexPath.row]
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            self.performSegue(withIdentifier: self.GO_TO_ABOUTAPP_SEGUE, sender: self)
+        }else if indexPath.row == 1 {
+            //self.performSegue(withIdentifier: self.GO_TO_OPTION, sender: self)
+        }else if indexPath.row == 2 {
+            self.performSegue(withIdentifier: self.GO_TO_CREDIT_SEGUE, sender: self)
+        }else if indexPath.row == 3 {
+            self.performSegue(withIdentifier: self.GO_TO_SUPPORT_SEGUE, sender: self)
+        }
     }
 
 }
