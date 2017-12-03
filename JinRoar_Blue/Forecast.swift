@@ -27,4 +27,8 @@ struct Forecast: Codable {
     let players:[Player]
 }
 
+struct Credit:Codable{
+    let name:String
+    let position:String
+}
 
