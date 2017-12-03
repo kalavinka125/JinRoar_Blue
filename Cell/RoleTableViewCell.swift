@@ -14,6 +14,7 @@ class RoleTableViewCell: UITableViewCell {
     @IBOutlet weak var warewolfKillVoteLabel: UILabel!
     @IBOutlet weak var roleCellImageView: UIImageView!
     @IBOutlet weak var abilityTargetLabel: UILabel!
+    @IBOutlet weak var trophyImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +22,7 @@ class RoleTableViewCell: UITableViewCell {
         playerNameLabel.adjustsFontSizeToFitWidth = true
         abilityTargetLabel.adjustsFontSizeToFitWidth = true
         warewolfKillVoteLabel.adjustsFontSizeToFitWidth = true
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
