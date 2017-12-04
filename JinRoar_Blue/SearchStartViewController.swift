@@ -24,7 +24,7 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
     //説明 テーブル
     @IBOutlet weak var descriptionTableView: UITableView!
     private let CELL_ID = "DESCRIPTION_CELL"
-    private let descriptionText = ["まず、「狼狂する猜疑心」を別デバイスで起動するがいい。","「狼狂する猜疑心」タイトル画面から「Connect \"HERMIT\"」を押し給え。","さすれば、ブラウザが表示されるであろう。このアプリが入っている端末を選択せよ。","このアプリに接続要請が来るゆえ、許可せよ。","時が経てば次の画面に移るだろう。しばし待たれよ。","連携中はBluetooth/Wi-Fiを使用する。さらに、スリープしない。電池残量には気をつけよ。","このアプリをバックグラウンドに移すとBluetooth/Wi-Fiは切断される。ゆめゆめ忘るることなかれ。"]
+    private let descriptionText = ["まず、「狼狂する猜疑心」を別デバイスで起動するがいい。","「狼狂する猜疑心」タイトル画面から「\"隠遁者\"との連携」を押し給え。","さすれば、ブラウザが表示されるであろう。このアプリが入っている端末を選択せよ。","このアプリに接続要請が来るゆえ、許可せよ。","時が経てば次の画面に移るだろう。しばし待たれよ。","連携中はBluetooth/Wi-Fiを使用する。さらに、スリープしない。電池残量には気をつけよ。","このアプリをバックグラウンドに移すとBluetooth/Wi-Fiは切断される。ゆめゆめ忘るることなかれ。"]
     
     
     @IBOutlet weak var manualTableView: UITableView!
@@ -66,6 +66,8 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
     */
     @IBAction func backButtonTapped(_ sender: Any) {
         assistant.stop()
+        appdelegate.session?.disconnect()
+        
         self.dismiss(animated: true, completion:nil)
     }
     
@@ -83,6 +85,7 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         //Connented(完了)時
         if(state == .connected){
             
+            assistant.stop()
             DispatchQueue.main.async {
                 self.performSegue(withIdentifier: "goToWatchGame", sender: self)
             }
@@ -116,6 +119,12 @@ class SearchStartViewController:UIViewController,MCBrowserViewControllerDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: self.CELL_ID,for:indexPath) as! DescriptionTableViewCell
         cell.numberLabel.text = String("\(indexPath.row + 1).")
         cell.descriptionTextView.text = descriptionText[indexPath.row]
+        if indexPath.row == 5 || indexPath.row == 6{
+            cell.descriptionTextView.textColor = UIColor.red
+        }else{
+            cell.descriptionTextView.textColor = UIColor.black
+        }
+        
         return cell
     }
     
