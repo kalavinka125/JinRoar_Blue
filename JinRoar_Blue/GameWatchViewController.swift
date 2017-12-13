@@ -9,10 +9,14 @@
 import UIKit
 import MultipeerConnectivity
 
-class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewDelegate,UITableViewDataSource{
+class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewDelegate,UITableViewDataSource,MCBrowserViewControllerDelegate{
+    
+    
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var roleTableView: UITableView!
+    
+    var browser : MCBrowserViewController!
     
     var appdelegate = UIApplication.shared.delegate as! AppDelegate
     private let CELL_ID = "roleCell"
@@ -31,6 +35,10 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
         self.roleTableView.dataSource = self
         //デリゲートの移譲
         appdelegate.session!.delegate = self
+        
+        let serviceType = "JinRoar"
+        browser = MCBrowserViewController(serviceType: serviceType, session: appdelegate.session!)
+        browser.delegate = self
         
         //画面部品イニシャライズ
         self.dayLabel.text = "\(day) 日"
@@ -52,6 +60,17 @@ class GameWatchViewController: UIViewController , MCSessionDelegate,UITableViewD
     }
     */
     
+    func browserViewControllerDidFinish(_ browserViewController: MCBrowserViewController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func reconnectButtonTapped(_ sender: Any) {
+        self.present(self.browser, animated: true, completion: nil)
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 103;
