@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PixelMplus12-Bold.ttf">
+            <string>PixelMplus12-Bold</string>
+        </array>
+        <array key="PixelMplus12-Regular.ttf">
+            <string>PixelMplus12-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--iPad View Controller-->
+        <scene sceneID="L1Q-7l-P3o">
+            <objects>
+                <viewController id="3uK-Pn-fPG" customClass="IPadViewController" customModule="JinRoar_Blue" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z0o-7e-GrT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcW-13-zGl">
+                                <rect key="frame" x="20" y="20" width="984" height="57.5"/>
+                                <fontDescription key="fontDescription" name="PixelMplus12-Bold" family="PixelMplus12" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="俯瞰する隠遁者" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjw-D9-5Ge">
+                                <rect key="frame" x="20" y="85" width="984" height="41"/>
+                                <fontDescription key="fontDescription" name="PixelMplus12-Regular" family="PixelMplus12" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bR2-Qk-MrD">
+                                <rect key="frame" x="363" y="128" width="641" height="622"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="285" id="eT7-XP-uvW" customClass="IPadDescriptionTableViewCell" customModule="JinRoar_Blue" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="641" height="285"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eT7-XP-uvW" id="8Pa-sD-gC9">
+                                            <rect key="frame" x="0.0" y="0.0" width="641" height="284.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="aaaa" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jch-jP-fI5">
+                                                    <rect key="frame" x="245" y="0.0" width="387" height="274"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="PixelMplus12-Regular" family="PixelMplus12" pointSize="25"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAg-q0-0ns">
+                                                    <rect key="frame" x="0.0" y="131" width="26" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PixelMplus12-Regular" family="PixelMplus12" pointSize="28"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOZ-IT-BQc">
+                                                    <rect key="frame" x="34" y="0.0" width="203" height="274"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionImageView" destination="TOZ-IT-BQc" id="kRG-fS-hW8"/>
+                                            <outlet property="numberLabel" destination="wAg-q0-0ns" id="xMG-0t-NP3"/>
+                                            <outlet property="textView" destination="jch-jP-fI5" id="bsT-9g-LiG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hermit" translatesAutoresizingMaskIntoConstraints="NO" id="3KA-58-osx">
+                                <rect key="frame" x="20" y="128" width="335" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="このアプリは「Where is a &quot;Werwolf&quot;? -狼狂する猜疑心-」用観戦アプリだ。 右に連携の手順を示そう・・・。 必ず読み給え。特に最後が重要だ。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0a7-ui-vOS">
+                                <rect key="frame" x="20" y="495" width="335" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="PixelMplus12-Regular" family="PixelMplus12" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sjw-D9-5Ge" firstAttribute="leading" secondItem="Yrq-Ti-gUl" secondAttribute="leading" constant="20" id="5dB-2w-cqJ"/>
+                            <constraint firstItem="Yrq-Ti-gUl" firstAttribute="trailing" secondItem="CcW-13-zGl" secondAttribute="trailing" constant="20" id="64i-35-G1v"/>
+                            <constraint firstItem="CcW-13-zGl" firstAttribute="top" secondItem="Yrq-Ti-gUl" secondAttribute="top" id="6QX-RM-vUI"/>
+                            <constraint firstItem="sjw-D9-5Ge" firstAttribute="top" secondItem="CcW-13-zGl" secondAttribute="bottom" constant="8" id="ICF-27-kMl"/>
+                            <constraint firstItem="Yrq-Ti-gUl" firstAttribute="trailing" secondItem="sjw-D9-5Ge" secondAttribute="trailing" constant="20" id="K7M-8T-jhd"/>
+                            <constraint firstItem="sjw-D9-5Ge" firstAttribute="top" secondItem="CcW-13-zGl" secondAttribute="bottom" constant="8" id="Zgx-rE-QlZ"/>
+                            <constraint firstItem="CcW-13-zGl" firstAttribute="leading" secondItem="Yrq-Ti-gUl" secondAttribute="leading" constant="20" id="mXg-9X-9Hj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yrq-Ti-gUl"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionTebleView" destination="bR2-Qk-MrD" id="eQ3-e9-Big"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dd-RM-rlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-105.46875" y="119.53125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hermit" width="425" height="876"/>
+    </resources>
+</document>
