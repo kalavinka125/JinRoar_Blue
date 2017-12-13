@@ -11,9 +11,10 @@ import MultipeerConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var isFirstBoot:Bool = true
     var window: UIWindow?
     var session : MCSession?
+    let descriptionText = ["まず、「狼狂する猜疑心」を別デバイスで起動するがいい。","「狼狂する猜疑心」タイトル画面から「\"隠遁者\"との連携」を押し給え。","さすれば、ブラウザが表示されるであろう。このアプリが入っている端末を選択せよ。","このアプリに接続要請が来るゆえ、許可せよ。","時が経てば次の画面に移るだろう。しばし待たれよ。","連携中はBluetooth/Wi-Fiを使用する。さらに、スリープしない。電池残量には気をつけよ。","このアプリをバックグラウンドに移すとBluetooth/Wi-Fiは切断される。ゆめゆめ忘るることなかれ。"]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
