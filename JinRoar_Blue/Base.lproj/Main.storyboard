@@ -292,9 +292,9 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="pMY-mc-Q74" id="qX1-1Z-DDE"/>
-                        <segue destination="bej-xG-yp7" kind="presentation" identifier="GO_TO_ABOUTAPP" id="sax-Ot-bGw"/>
-                        <segue destination="fr9-0F-6DK" kind="presentation" identifier="GO_TO_CREDIT" id="KCS-hs-NxB"/>
-                        <segue destination="s0h-HW-KBk" kind="presentation" identifier="GO_TO_SUPPORT" id="CcZ-ky-oyg"/>
+                        <segue destination="bej-xG-yp7" kind="presentation" identifier="GO_TO_ABOUTAPP" modalTransitionStyle="crossDissolve" id="sax-Ot-bGw"/>
+                        <segue destination="fr9-0F-6DK" kind="presentation" identifier="GO_TO_CREDIT" modalTransitionStyle="crossDissolve" id="KCS-hs-NxB"/>
+                        <segue destination="s0h-HW-KBk" kind="presentation" identifier="GO_TO_SUPPORT" modalTransitionStyle="crossDissolve" id="CcZ-ky-oyg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yq0-g6-uWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -431,7 +431,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lqf-9Z-InG" kind="presentation" id="NSL-UF-2Hz"/>
+                                    <segue destination="lqf-9Z-InG" kind="presentation" modalTransitionStyle="crossDissolve" id="NSL-UF-2Hz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where is a &quot;Werwolf&quot;?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bao-YQ-0gU">
