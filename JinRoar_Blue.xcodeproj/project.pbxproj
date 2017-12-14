@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E03DAC71FE20564007FCAED /* IPadDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03DAC61FE20564007FCAED /* IPadDescriptionTableViewCell.swift */; };
 		7E31ECD01FCEE39E00D5A916 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31ECCF1FCEE39E00D5A916 /* AppDelegate.swift */; };
 		7E31ECD21FCEE39E00D5A916 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31ECD11FCEE39E00D5A916 /* ViewController.swift */; };
 		7E31ECD51FCEE39E00D5A916 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E31ECD31FCEE39E00D5A916 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E03DAC61FE20564007FCAED /* IPadDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPadDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		7E31ECCC1FCEE39E00D5A916 /* JinRoar_Blue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JinRoar_Blue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E31ECCF1FCEE39E00D5A916 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E31ECD11FCEE39E00D5A916 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		7EF1E68F1FD2B0B300493FE2 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				7E03DAC61FE20564007FCAED /* IPadDescriptionTableViewCell.swift */,
 				7E7F19161FCFE54700FA7667 /* RoleTableViewCell.swift */,
 				7E99C1161FD38BF6008C5AA3 /* CreditTableViewCell.swift */,
 				7EF1E6901FD2B0CD00493FE2 /* DescriptionTableViewCell.swift */,
@@ -368,6 +371,7 @@
 				7E37A26F1FD0F5F600C40589 /* Forecast.swift in Sources */,
 				7E31ECD21FCEE39E00D5A916 /* ViewController.swift in Sources */,
 				7E7F19171FCFE54700FA7667 /* RoleTableViewCell.swift in Sources */,
+				7E03DAC71FE20564007FCAED /* IPadDescriptionTableViewCell.swift in Sources */,
 				7E31ECD01FCEE39E00D5A916 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
